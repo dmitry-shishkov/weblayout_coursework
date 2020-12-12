@@ -58,7 +58,7 @@ ul {
 	margin: 0 auto;
 	padding: 0 160px;
 	max-width: 1920px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .main-title {
@@ -78,14 +78,14 @@ ul {
 	background-color: #000000;
 }
 
-.header__container {
+.header__block {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: auto;
 	max-width: 1600px;
 	min-height: 100px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .header_item:nth-child(1),
@@ -104,7 +104,7 @@ ul {
 .header__menu {
 	margin: 0 120px 0 0;
 	width: 896px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .menu_list {
@@ -143,7 +143,7 @@ ul {
 	color: #ffffff;
 	background-color: transparent;
 	background: url('../img/authentication.svg') center left no-repeat;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .header__authentication:focus {
@@ -163,13 +163,13 @@ ul {
 
 /* hero */
 
-.hero__container {
+.hero__block {
 	max-width: 1920px;
 	min-height: 700px;
-	background: url('../img/hero-birmingham-museums-trust.jpg') center bottom no-repeat;
+	background: url('../img/hero_background.jpg') center bottom no-repeat;
 	background-size: cover;
 	animation: bg-animation 60s linear infinite;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 @keyframes bg-animation {
@@ -205,7 +205,7 @@ ul {
 	font-size: 18px;
 	line-height: 1;
 	color: #FFFFFF;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .art_link {
@@ -237,7 +237,7 @@ ul {
 	padding: 3px 3px;
 	width: 255px;
 	height: 33px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .hero__search:focus-within {
@@ -301,7 +301,7 @@ ul {
 .hero__content {
 	padding: 0 30px 0 160px;
 	max-width: 765px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .hero__title {
@@ -312,7 +312,7 @@ ul {
 	font-size: 72px;
 	line-height: 84px;
 	color: #FFFFFF;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .hero__text {
@@ -322,7 +322,7 @@ ul {
 	font-size: 18px;
 	line-height: 30px;
 	color: #FFFFFF;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .hero__link {
@@ -359,7 +359,7 @@ ul {
 .about-us__container {
 	padding: 88px 0 30px 0;
 	min-height: 455px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .main-title {
@@ -373,4 +373,15 @@ ul {
 	font-size: 16px;
 	line-height: 32px;
 	color: #333333;
+}
+
+.conatainer_gallery {
+	width: 100%;
+	background: url('../img/gallery_background.jpg') center bottom no-repeat;
+}
+
+.gallery__block {
+	padding: 80px 0;
+	min-height: 995px;
+	/* outline: 1px solid red; */
 }
