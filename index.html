@@ -8,24 +8,39 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		<div class="container container_header">
-			<div class="header__block">
-				<a href="#" class="header__logo header_item">
+	<header class="header">
+		<div class="container block1__container">
+			<div class="header__block1">
+				<a href="#" class="header__logo">
 					<img src="img/logo.svg" alt="Blanchard логотип">
 				</a>
-				<nav class="header__menu header_item">
-					<ul class="menu_list">
-						<li class="menu_item"><a href="#id-about-us" class="menu_link">О нас</a></li>
-						<li class="menu_item"><a href="#id-gallery" class="menu_link">Галерея</a></li>
-						<li class="menu_item"><a href="#" class="menu_link">Каталог</a></li>
-						<li class="menu_item"><a href="#" class="menu_link">События</a></li>
-						<li class="menu_item"><a href="#" class="menu_link">Издания</a></li>
-						<li class="menu_item"><a href="#" class="menu_link">Проекты</a></li>
-						<li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+				<nav class="header__menu">
+					<ul class="header__menu_list">
+						<li class="header__menu_item"><a href="#id-about-us" class="header__menu_link">О нас</a></li>
+						<li class="header__menu_item"><a href="#id-gallery" class="header__menu_link">Галерея</a></li>
+						<li class="header__menu_item"><a href="#" class="header__menu_link">Каталог</a></li>
+						<li class="header__menu_item"><a href="#" class="header__menu_link">События</a></li>
+						<li class="header__menu_item"><a href="#" class="header__menu_link">Издания</a></li>
+						<li class="header__menu_item"><a href="#" class="header__menu_link">Проекты</a></li>
+						<li class="header__menu_item"><a href="#" class="header__menu_link">Контакты</a></li>
 					</ul>
 				</nav>
-				<a href="#" class="header__authentication header_item">Войти</a>
+				<a href="#" class="header__authentication">Войти</a>
+			</div>
+		</div>
+		<div class="container block2__container">
+			<div class="header__block2">
+				<ul class="header__art_list">
+					<li class="header__art_item"><a href="#" class="header__art_link">Реализм</a></li>
+					<li class="header__art_item"><a href="#" class="header__art_link">Импрессионизм</a></li>
+					<li class="header__art_item"><a href="#" class="header__art_link">Постимпрессионизм</a></li>
+					<li class="header__art_item"><a href="#" class="header__art_link">Авангард</a></li>
+					<li class="header__art_item"><a href="#" class="header__art_link">Футуризм</a></li>
+				</ul>
+				<form class="header__search">
+					<button type="submit" class="search_button" aria-label="Поиск по сайту"></button>
+					<input class="input_search" name="Поиск" type="search" placeholder="Поиск по сайту">
+				</form>
 			</div>
 		</div>
 	</header>
@@ -33,48 +48,48 @@
 	<main>
 		<!-- Hero -->
 		<section>
-			<div class="hero__block hero_item">
-				<div class="hero__menu">
-					<ul class="hero__art">
-						<li class="art_item"><a href="#" class="art_link">Реализм</a></li>
-						<li class="art_item"><a href="#" class="art_link">Импрессионизм</a></li>
-						<li class="art_item"><a href="#" class="art_link">Постимпрессионизм</a></li>
-						<li class="art_item"><a href="#" class="art_link">Авангард</a></li>
-						<li class="art_item"><a href="#" class="art_link">Футуризм</a></li>
-					</ul>
-					<form class="hero__search hero_item">
-						<button type="submit" class="search_button" aria-label="Поиск по сайту"></button>
-						<input class="input_search" name="Поиск" type="search" placeholder="Поиск по сайту">
-					</form>
-				</div>
-				<div class="hero__content">
-					<h1 class="hero__title">
-						Прикоснитесь к прекрасному
-					</h1>
-					<p class="hero__text">
-						Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-					</p>
-					<a href="#" class="hero__link">Подписаться на рассылку</a>
+			<div class="container hero__container">
+				<div class="hero__block">
+					<div class="hero__content">
+						<h1 class="hero__title">
+							Прикоснитесь к прекрасному
+						</h1>
+						<p class="hero__text">
+							Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+						</p>
+						<button class="hero__link" onclick="window.location.href = 'https://#';">Подписаться на рассылку</button>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- About us -->
 		<section>
-			<div class="container">
-				<div class="about-us__container" id="id-about-us">
+			<div class="container about-us__container" id="id-about-us">
 					<h2 class="main-title">О нас</h2>
 					<p class="about-us__content">
 						Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
 					</p>
-				</div>
 			</div>
 		</section>
 		<!-- Gallery -->
-		<section>
+		<!-- <section>
 			<div class="container conatainer_gallery">
 				<div class="gallery__block" id="id-gallery">
-					<div class="gallery__selektion">
-
+					<div class="gallery__content">
+						<div class="gallery__select">
+							<h2 class="main-title">Галерея</h2>
+							<p class="select_label">
+								Фильтровать по:
+							</p>
+							<select name="" id="">
+								<option value="">Автор</option>
+								<option value="">Направление</option>
+								<option value="">Техника</option>
+							</select>
+						</div>
+						<p class="gallery_text">
+							Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="gallery_authorization">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
+						</p>
 					</div>
 					<div class="gallery__swiper">
 						
@@ -82,7 +97,7 @@
 
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 	</main>
 
