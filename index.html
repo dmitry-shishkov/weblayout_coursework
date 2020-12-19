@@ -5,31 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Blanchard - художественная галереяt</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
-		<div class="container block1__container">
-			<div class="header__block1">
+		<div class="container header-block1__container">
+			<nav class="header__nav">
 				<a href="#" class="header__logo">
 					<img src="img/logo.svg" alt="Blanchard логотип">
 				</a>
-				<nav class="header__menu">
-					<ul class="header__menu_list">
-						<li class="header__menu_item"><a href="#id-about-us" class="header__menu_link">О нас</a></li>
-						<li class="header__menu_item"><a href="#id-gallery" class="header__menu_link">Галерея</a></li>
-						<li class="header__menu_item"><a href="#" class="header__menu_link">Каталог</a></li>
-						<li class="header__menu_item"><a href="#" class="header__menu_link">События</a></li>
-						<li class="header__menu_item"><a href="#" class="header__menu_link">Издания</a></li>
-						<li class="header__menu_item"><a href="#" class="header__menu_link">Проекты</a></li>
-						<li class="header__menu_item"><a href="#" class="header__menu_link">Контакты</a></li>
-					</ul>
-				</nav>
+				<ul class="header__menu_list">
+					<li class="header__menu_item"><a href="#id-about-us" class="header__menu_link">О нас</a></li>
+					<li class="header__menu_item"><a href="#id-gallery" class="header__menu_link">Галерея</a></li>
+					<li class="header__menu_item"><a href="#" class="header__menu_link">Каталог</a></li>
+					<li class="header__menu_item"><a href="#" class="header__menu_link">События</a></li>
+					<li class="header__menu_item"><a href="#" class="header__menu_link">Издания</a></li>
+					<li class="header__menu_item"><a href="#" class="header__menu_link">Проекты</a></li>
+					<li class="header__menu_item"><a href="#" class="header__menu_link">Контакты</a></li>
+				</ul>
 				<a href="#" class="header__authentication">Войти</a>
-			</div>
+			</nav>
 		</div>
-		<div class="container block2__container">
-			<div class="header__block2">
+		<div class="container header-block2__container">
+			<div class="header__art">
 				<ul class="header__art_list">
 					<li class="header__art_item"><a href="#" class="header__art_link">Реализм</a></li>
 					<li class="header__art_item"><a href="#" class="header__art_link">Импрессионизм</a></li>
@@ -51,9 +51,9 @@
 			<div class="container hero__container">
 				<div class="hero__block">
 					<div class="hero__content">
-						<h1 class="hero__title">
+						<h2 class="hero__title">
 							Прикоснитесь к прекрасному
-						</h1>
+						</h2>
 						<p class="hero__text">
 							Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
 						</p>
@@ -64,44 +64,105 @@
 		</section>
 		<!-- About us -->
 		<section>
-			<div class="container about-us__container" id="id-about-us">
-					<h2 class="main-title">О нас</h2>
-					<p class="about-us__content">
-						Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
-					</p>
+			<div class="container" id="id-about-us">
+				<div class="about-us__block">
+					<h2 class="title">О нас</h2>
+						<p class="about-us__content">
+							Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+						</p>
+				</div>
 			</div>
 		</section>
 		<!-- Gallery -->
-		<!-- <section>
-			<div class="container conatainer_gallery">
-				<div class="gallery__block" id="id-gallery">
+		<section>
+			<div class="container container_gallery" id="id-gallery">
+				<div class="gallery__block">
 					<div class="gallery__content">
-						<div class="gallery__select">
-							<h2 class="main-title">Галерея</h2>
+						<div>
+							<h2 class="title gallery-title">Галерея</h2>
 							<p class="select_label">
 								Фильтровать по:
 							</p>
-							<select name="" id="">
-								<option value="">Автор</option>
+							<select class="gallery__select" name="" id="">
+								<option value="" selected>Автор</option>
 								<option value="">Направление</option>
 								<option value="">Техника</option>
 							</select>
 						</div>
 						<p class="gallery_text">
-							Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="gallery_authorization">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
+							Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery_authorization">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
 						</p>
 					</div>
-					<div class="gallery__swiper">
-						
-					</div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<ul class="gallery__list">
+									<li class="gallery__item"><img src="img/gallery/gallery-img-1.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-2.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-3.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-4.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-5.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-6.jpg" alt="Картина"></li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul class="gallery__list">
+									<li class="gallery__item"><img src="img/gallery/gallery-img-7.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-8.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-9.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-10.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-11.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-12.jpg" alt="Картина"></li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul class="gallery__list">
+									<li class="gallery__item"><img src="img/gallery/gallery-img-13.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-14.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-15.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-16.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-17.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-18.jpg" alt="Картина"></li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul class="gallery__list">
+									<li class="gallery__item"><img src="img/gallery/gallery-img-19.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-20.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-21.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-22.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-23.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-24.jpg" alt="Картина"></li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul class="gallery__list">
+									<li class="gallery__item"><img src="img/gallery/gallery-img-25.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-26.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-27.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-28.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-29.jpg" alt="Картина"></li>
+									<li class="gallery__item"><img src="img/gallery/gallery-img-30.jpg" alt="Картина"></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+				</div>
 
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 	</main>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/transition.js"></script>
+	<script src="js/swiper-bundle-min.js"></script>
+	<script src="js/swiper-gallery.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/select.js"></script>	
 </body>
 </html>
