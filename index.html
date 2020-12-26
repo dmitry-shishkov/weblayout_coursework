@@ -11,79 +11,69 @@
 </head>
 <body>
 	<header class="header">
-		<div class="container header-block1__container">
-			<nav class="header__nav">
-				<a href="#" class="header__logo">
-					<img src="img/logo.svg" alt="Blanchard логотип">
+		<div class="container header-nav__container">
+			<nav class="header-nav content__size">
+				<a class="logo header__logo" href="#">
+					<img src="img/logo.svg" alt="Логотип Blanchard">
 				</a>
-				<ul class="header__menu_list">
-					<li class="header__menu_item"><a href="#id-about-us" class="header__menu_link">О нас</a></li>
-					<li class="header__menu_item"><a href="#id-gallery" class="header__menu_link">Галерея</a></li>
-					<li class="header__menu_item"><a href="#" class="header__menu_link">Каталог</a></li>
-					<li class="header__menu_item"><a href="#" class="header__menu_link">События</a></li>
-					<li class="header__menu_item"><a href="#" class="header__menu_link">Издания</a></li>
-					<li class="header__menu_item"><a href="#" class="header__menu_link">Проекты</a></li>
-					<li class="header__menu_item"><a href="#" class="header__menu_link">Контакты</a></li>
+				<ul class="menu header__menu">
+					<li class="menu__item"><a class="menu__link" href="#id-about-us">О нас</a></li>
+					<li class="menu__item"><a class="menu__link" href="#id-gallery">Галерея</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">События</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Издания</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Проекты</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
 				</ul>
-				<a href="#" class="header__authentication">Войти</a>
+				<a class="header__authentication" href="#">Войти</a>
 			</nav>
 		</div>
-		<div class="container header-block2__container">
-			<div class="header__art">
-				<ul class="header__art_list">
-					<li class="header__art_item"><a href="#" class="header__art_link">Реализм</a></li>
-					<li class="header__art_item"><a href="#" class="header__art_link">Импрессионизм</a></li>
-					<li class="header__art_item"><a href="#" class="header__art_link">Постимпрессионизм</a></li>
-					<li class="header__art_item"><a href="#" class="header__art_link">Авангард</a></li>
-					<li class="header__art_item"><a href="#" class="header__art_link">Футуризм</a></li>
+		<div class="container header-art__container">
+			<div class="header-art content__size">
+				<ul class="header-art__list">
+					<li class="header-art__item"><a class="header-art__link" href="#">Реализм</a></li>
+					<li class="header-art__item"><a class="header-art__link" href="#">Импрессионизм</a></li>
+					<li class="header-art__item"><a class="header-art__link" href="#">Постимпрессионизм</a></li>
+					<li class="header-art__item"><a class="header-art__link" href="#">Авангард</a></li>
+					<li class="header-art__item"><a class="header-art__link" href="#">Футуризм</a></li>
 				</ul>
-				<form class="header__search">
-					<button type="submit" class="search_button" aria-label="Поиск по сайту"></button>
-					<input class="input_search" name="Поиск" type="search" placeholder="Поиск по сайту">
+				<form class="search">
+					<button class="search__button" type="submit" aria-label="Поиск по сайту"></button>
+					<input class="search__input" name="Поиск" type="search" placeholder="Поиск по сайту">
 				</form>
 			</div>
 		</div>
 	</header>
-
-	<main>
-		<!-- Hero -->
-		<section>
+	<main class="main">
+		<section class="hero">
 			<div class="container hero__container">
-				<div class="hero__block">
-					<div class="hero__content">
-						<h1 class="hero__main-title">
-							Blanchard - художественная галерея
-						</h1>
-						<p class="hero__title">
-							Прикоснитесь к прекрасному
-						</p>
-						<p class="hero__text">
-							Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-						</p>
-						<button class="hero__link" onclick="window.location.href = 'https://#';">Подписаться на рассылку</button>
-					</div>
+				<div class="hero__inner content__size">
+						<h1 class="visually-hidden">Blanchard - художественная галерея</h1>
+						<p class="hero__text1">Прикоснитесь к прекрасному</p>
+						<p class="hero__text2">
+              Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+            </p>
+            <a class="hero__link" href="#">Подписаться на рассылку</a>
 				</div>
 			</div>
 		</section>
-		<!-- About us -->
-		<section>
+		<section class="about">
 			<div class="container" id="id-about-us">
-				<div class="about-us__block">
-					<h2 class="title">О нас</h2>
-						<p class="about-us__content">
-							Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
-						</p>
+				<div class="about__inner content__size">
+					<h2 class="title about__title">О нас</h2>
+          <p class="about__content">
+            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
+          </p>
 				</div>
 			</div>
 		</section>
-		<!-- Gallery -->
-		<section>
-			<div class="container container_gallery" id="id-gallery">
-				<div class="gallery__block">
+		<section class="gallery">
+			<div class="container gallery__container" id="id-gallery">
+				<div class="gallery__inner content__size">
 					<div class="gallery__content">
 						<div>
-							<h2 class="title gallery-title">Галерея</h2>
-							<p class="select_label">
+							<h2 class="title gallery__title">Галерея</h2>
+							<p class="gallery__select-label">
 								Фильтровать по:
 							</p>
 							<select class="gallery__select" name="Фильтр">
@@ -92,8 +82,8 @@
 								<option value="Техника">Техника</option>
 							</select>
 						</div>
-						<p class="gallery_text">
-							Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery_authorization">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
+						<p class="gallery__text">
+							Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery__authorization">авторизуйтесь</a>, либо воспользуйтесь лицензией.
 						</p>
 					</div>
 					<div class="swiper-container">
