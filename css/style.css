@@ -78,7 +78,7 @@ ul {
 	line-height: 1;
 }
 
-.content__size {
+.content-size {
   max-width: 1630px;
 }
 
@@ -416,7 +416,7 @@ ul {
 	margin: 0 0 23px 0;
 }
 
-.gallery__select-label {
+.gallery__label {
 	margin: 0 0 10px 0;
 }
 
