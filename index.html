@@ -6,7 +6,7 @@
 	<title>Blanchard - художественная галерея</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
 				<ul class="menu header__menu">
 					<li class="menu__item"><a class="menu__link" href="#id-about-us">О нас</a></li>
 					<li class="menu__item"><a class="menu__link" href="#id-gallery">Галерея</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+					<li class="menu__item"><a class="menu__link" href="#id-catalog">Каталог</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">События</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Издания</a></li>
 					<li class="menu__item"><a class="menu__link" href="#">Проекты</a></li>
@@ -49,8 +49,8 @@
 			<div class="container hero__container">
 				<div class="hero__inner content-size">
 						<h1 class="visually-hidden">Blanchard - художественная галерея</h1>
-						<p class="hero__subtitle">Прикоснитесь к прекрасному</p>
-						<p class="hero__content">
+						<p class="hero__title">Прикоснитесь к прекрасному</p>
+						<p class="hero__descr">
               Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
             </p>
             <a class="hero__link" href="#">Подписаться на рассылку</a>
@@ -85,77 +85,612 @@
 						<p class="gallery__text">
 							Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery__authorization">авторизуйтесь</a>, либо воспользуйтесь лицензией.
 						</p>
-					</div>
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<ul class="gallery__list">
-									<li class="gallery__item"><img src="img/gallery/gallery-img-1.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-2.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-3.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-4.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-5.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-6.jpg" alt="Картина"></li>
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul class="gallery__list">
-									<li class="gallery__item"><img src="img/gallery/gallery-img-7.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-8.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-9.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-10.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-11.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-12.jpg" alt="Картина"></li>
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul class="gallery__list">
-									<li class="gallery__item"><img src="img/gallery/gallery-img-13.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-14.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-15.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-16.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-17.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-18.jpg" alt="Картина"></li>
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul class="gallery__list">
-									<li class="gallery__item"><img src="img/gallery/gallery-img-19.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-20.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-21.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-22.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-23.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-24.jpg" alt="Картина"></li>
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul class="gallery__list">
-									<li class="gallery__item"><img src="img/gallery/gallery-img-25.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-26.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-27.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-28.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-29.jpg" alt="Картина"></li>
-									<li class="gallery__item"><img src="img/gallery/gallery-img-30.jpg" alt="Картина"></li>
-								</ul>
-							</div>
-
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-				</div>
-
-				</div>
+          </div>
+          <div class="gallery__slider swiper-container">
+            <div class="slider-top">
+              <div class="slider-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+									<img src="img/gallery/gallery-img-1.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+									<img src="img/gallery/gallery-img-2.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-3.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-4.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-5.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-6.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-7.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-8.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-9.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-10.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-11.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-12.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-13.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-14.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-15.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-16.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-17.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-18.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-19.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-20.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-21.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-22.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-23.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-24.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-25.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-26.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-27.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-28.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-29.jpg" alt="Картинка">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/gallery-img-30.jpg" alt="Картинка">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 			</div>
-		</section>
+    </section>
+    <section class="catalog">
+      <div class="container catalog__container" id="id-catalog">
+        <div class="catalog__inner content-size">
+          <div class="catalog__top">
+            <h2 class="title catalog__title">Каталог</h2>
+            <ul class="flags">
+              <li class="flags__item flags__item--flag-france tabs-flag-btn flags__item-before" data-path="tab-flag-france" tabindex="1"></li>
+              <li class="flags__item flags__item--flag-germany tabs-flag-btn" data-path="tab-flag-germany" tabindex="1"></li>
+              <li class="flags__item flags__item--flag-italia tabs-flag-btn" data-path="tab-flag-italia" " tabindex="1"></li>
+              <li class="flags__item flags__item--flag-russia tabs-flag-btn" data-path="tab-flag-russia" " tabindex="1"></li>
+              <li class="flags__item flags__item--flag-belgium tabs-flag-btn" data-path="tab-flag-belgium" " tabindex="1"></li>
+            </ul>
+          </div>
+          <p class="catalog__descr">
+            Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
+          </p>
 
-	</main>
+          <div class="tab-flag-content" data-target="tab-flag-france">
+            <div class="catalog__content">
+              <div class="catalog__artist" tabindex="0">
+                <div class="tab-artist-content" data-target="tab-france-1">Художники Франции 1</div>
+                <div class="tab-artist-content" data-target="tab-france-2">Художники Франции 2</div>
+                <div class="tab-artist-content" data-target="tab-france-3">Художники Франции 3</div>
+                <div class="tab-artist-content" data-target="tab-france-4">Художники Франции 4</div>
+                <div class="tab-artist-content" data-target="tab-france-5">Художники Франции 5</div>
+                <div class="tab-artist-content" data-target="tab-france-6">Художники Франции 6</div>
+                <div class="tab-artist-content" data-target="tab-france-7">Художники Франции 7</div>
+              </div>
+              <div class="catalog__dates">
+                <ul class="dates accordion">
+                  <li class="dates__item dates__item--border-top">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1400 по 1499 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-france-1" tabindex="1">Художники Франции 1</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1500 по 1599 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-france-2" tabindex="1">Художники Франции 2</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1600 по 1699 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-france-3" tabindex="1">Художники Франции 3</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1700 по 1799 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-france-4" tabindex="1">Художники Франции 4</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1800 по 1899 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-france-5" tabindex="1">Художники Франции 5</li>
+                      </ul>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1900 по 1999 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-france-6" tabindex="1">Художники Франции 6</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item ">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 2000 г.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-france-7" tabindex="1">Художники Франции 7</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-flag-content" data-target="tab-flag-germany">
+            <div class="catalog__content">
+              <div class="catalog__artist" tabindex="0">
+                <div class="tab-artist-content" data-target="tab-germany-1">Художники Германии 1</div>
+                <div class="tab-artist-content" data-target="tab-germany-2">Художники Германии 2</div>
+                <div class="tab-artist-content" data-target="tab-germany-3">Художники Германии 3</div>
+                <div class="tab-artist-content" data-target="tab-germany-4">Художники Германии 4</div>
+                <div class="tab-artist-content" data-target="tab-germany-5">Художники Германии 5</div>
+                <div class="tab-artist-content" data-target="tab-germany-6">Художники Германии 6</div>
+                <div class="tab-artist-content" data-target="tab-germany-7">Художники Германии 7</div>
+              </div>
+              <div class="catalog__dates">
+                <ul class="dates accordion">
+                  <li class="dates__item dates__item--border-top">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1400 по 1499 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-germany-1" tabindex="1">Художники Германии 1</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1500 по 1599 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-germany-2" tabindex="1">Художники Германии 2</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1600 по 1699 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-germany-3" tabindex="1">Художники Германии 3</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1700 по 1799 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-germany-4" tabindex="1">Художники Германии 4</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1800 по 1899 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-germany-5" tabindex="1">Художники Германии 5</li>
+                      </ul>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1900 по 1999 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-germany-6" tabindex="1">Художники Германии 6</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item ">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 2000 г.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-germany-7" tabindex="1">Художники Германии 7</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-flag-content" data-target="tab-flag-italia">
+            <div class="catalog__content">
+              <div class="catalog__artist" tabindex="0">
+                <div class="tab-artist-content" data-target="tab-1">Бенедетто ди Биндо</div>
+                <div class="tab-artist-content" data-target="tab-2">Бергоньоне, Амброджо</div>
+                <div class="tab-artist-content" data-target="tab-3">Биссоло, Франческо</div>
+                <div class="tab-artist-content" data-target="tab-4">Больтраффио, Джованни</div>
+                <div class="tab-artist-content" data-target="tab-5">Бонсиньори, Франческо</div>
+                <div class="tab-artist-content" data-target="tab-6">Боттичини, Рафаэлло</div>
+                <div class="tab-artist-content" data-target="tab-7">Брамантино</div>
+                <div class="tab-artist-content" data-target="tab-8">Бреа, Людовико</div>
+                <div class="tab-artist-content" data-target="tab-9">Бьяджо д’Антонио Туччи</div>
+                <div class="tab-artist-content" data-target="tab-10">Веккьетта</div>
+                <div class="tab-artist-content" data-target="tab-11">Андреа Верроккьо</div>
+                <div class="tab-artist-content" data-target="tab-12">
+                  <img class="catalog__artist-img" src="img/catalog/artist-Domenico-Ghirlandaio.jpg" alt="Доменико Гирландайо">
+                  <p class="catalog__artist-name">Доменико Гирландайо</p>
+                  <p class="catalog__artist-date">2&nbsp;июня 1448&nbsp;&mdash; 11&nbsp;января 1494.</p>
+                  <p class="catalog__artist-descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+                  </p>
+                </div>
+                <div class="tab-artist-content" data-target="tab-13">Беноццо Гоццоли</div>
+                <div class="tab-artist-content" data-target="tab-14">Граначчи, Франческо</div>
+                <div class="tab-artist-content" data-target="tab-15">Грегорио ди Чекко</div>
+                <div class="tab-artist-content" data-target="tab-16">Джованни да Удине</div>
+                <div class="tab-artist-content" data-target="tab-17">Джованни ди Паоло</div>
+                <div class="tab-artist-content" data-target="tab-18">Джорджоне</div>
+                <div class="tab-artist-content" data-target="tab-19">Парентино, Бернардо</div>
+                <div class="tab-artist-content" data-target="tab-20">Пезеллино</div>
+                <div class="tab-artist-content" data-target="tab-21">Пьетро Перуджино</div>
+                <div class="tab-artist-content" data-target="tab-22">Перуцци, Бальдассаре</div>
+                <div class="tab-artist-content" data-target="tab-23">Пизанелло</div>
+                <div class="tab-artist-content" data-target="tab-24">Пинтуриккьо</div>
+              </div>
+              <div class="catalog__dates">
+                <ul class="dates accordion">
+                  <li class="dates__item dates__item--border-top">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1400 по 1499 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-1" tabindex="1">Бенедетто ди Биндо</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-2" tabindex="1">Бергоньоне, Амброджо</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-3" tabindex="1">Биссоло, Франческо</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-4" tabindex="1">Больтраффио, Джованни</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-5" tabindex="1">Бонсиньори, Франческо</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-6" tabindex="1">Боттичини, Рафаэлло</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-7" tabindex="1">Брамантино</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-8" tabindex="1">Бреа, Людовико</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-9" tabindex="1">Бьяджо д’Антонио Туччи</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-10" tabindex="1">Веккьетта</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-11" tabindex="1">Андреа Верроккьо</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-12" tabindex="1">Доменико Гирландайо</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-13" tabindex="1">Беноццо Гоццоли</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-14" tabindex="1">Граначчи, Франческо</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-15" tabindex="1">Грегорио ди Чекко</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-16" tabindex="1">Джованни да Удине</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-17" tabindex="1">Джованни ди Паоло</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-18" tabindex="1">Джорджоне</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-19" tabindex="1">Парентино, Бернардо</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-20" tabindex="1">Пезеллино</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-21" tabindex="1">Пьетро Перуджино</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-22" tabindex="1">Перуцци, Бальдассаре</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-23" tabindex="1">Пизанелло</li>
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-24" tabindex="1">Пинтуриккьо</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1500 по 1599 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                        Художники
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1600 по 1699 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                        Художники
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1700 по 1799 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                        Художники
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1800 по 1899 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                        Художники
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1900 по 1999 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                        Художники
+                    </div>
+                  </li>
+                  <li class="dates__item ">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 2000 г.</p>
+                    </div>
+                    <div class="dates__content">
+                        Художники
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-flag-content" data-target="tab-flag-russia">
+            <div class="catalog__content">
+              <div class="catalog__artist" tabindex="0">
+                <div class="tab-artist-content" data-target="tab-russia-1">Художники России 1</div>
+                <div class="tab-artist-content" data-target="tab-russia-2">Художники России 2</div>
+                <div class="tab-artist-content" data-target="tab-russia-3">Художники России 3</div>
+                <div class="tab-artist-content" data-target="tab-russia-4">Художники России 4</div>
+                <div class="tab-artist-content" data-target="tab-russia-5">Художники России 5</div>
+                <div class="tab-artist-content" data-target="tab-russia-6">Художники России 6</div>
+                <div class="tab-artist-content" data-target="tab-russia-7">Художники России 7</div>
+              </div>
+              <div class="catalog__dates">
+                <ul class="dates accordion">
+                  <li class="dates__item dates__item--border-top">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1400 по 1499 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-russia-1" tabindex="1">Художники России 1</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1500 по 1599 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-russia-2" tabindex="1">Художники России 2</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1600 по 1699 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-russia-3" tabindex="1">Художники России 3</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1700 по 1799 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-russia-4" tabindex="1">Художники России 4</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1800 по 1899 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-russia-5" tabindex="1">Художники России 5</li>
+                      </ul>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1900 по 1999 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-russia-6" tabindex="1">Художники России 6</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item ">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 2000 г.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-russia-7" tabindex="1">Художники России 7</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-flag-content" data-target="tab-flag-belgium">
+            <div class="catalog__content">
+              <div class="catalog__artist" tabindex="0">
+                <div class="tab-artist-content" data-target="tab-belgium-1">Художники Бельгии 1</div>
+                <div class="tab-artist-content" data-target="tab-belgium-2">Художники Бельгии 2</div>
+                <div class="tab-artist-content" data-target="tab-belgium-3">Художники Бельгии 3</div>
+                <div class="tab-artist-content" data-target="tab-belgium-4">Художники Бельгии 4</div>
+                <div class="tab-artist-content" data-target="tab-belgium-5">Художники Бельгии 5</div>
+                <div class="tab-artist-content" data-target="tab-belgium-6">Художники Бельгии 6</div>
+                <div class="tab-artist-content" data-target="tab-belgium-7">Художники Бельгии 7</div>
+              </div>
+              <div class="catalog__dates">
+                <ul class="dates accordion">
+                  <li class="dates__item dates__item--border-top">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1400 по 1499 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-belgium-1" tabindex="1">Художники Бельгии 1</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1500 по 1599 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-belgium-2" tabindex="1">Художники Бельгии 2</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1600 по 1699 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-belgium-3" tabindex="1">Художники Бельгии 3</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1700 по 1799 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-belgium-4" tabindex="1">Художники Бельгии 4</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1800 по 1899 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-belgium-5" tabindex="1">Художники Бельгии 5</li>
+                      </ul>
+                  </li>
+                  <li class="dates__item">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 1900 по 1999 гг.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-belgium-6" tabindex="1">Художники Бельгии 6</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dates__item ">
+                    <div class="dates__title">
+                      <p class="dates__title-paragraph" tabindex="1">C 2000 г.</p>
+                    </div>
+                    <div class="dates__content">
+                      <ul class="artists-list">
+                        <li class="artists-list__item tabs-artist-btn" data-path="tab-belgium-7" tabindex="1">Художники Бельгии 7</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/transition.js"></script>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+	<script src="js/hero-transition-background.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/swiper-gallery.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
-	<script src="js/select.js"></script>
+  <script src="js/select-gallery.js"></script>
+  <script src="js/accordion-catalog.js"></script>
+  <script src="js/tabs-catalog.js"></script>
+  <script src="js/activ-flag-catalog.js"></script>
 </body>
 </html>
