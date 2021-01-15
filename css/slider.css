@@ -1,0 +1,117 @@
+
+/* gallery */
+
+.swiper-container {
+  width: 100%;
+  max-height: 830px;
+}
+
+.slider-top {
+  padding: 16px 0 30px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  width: 33.333%;
+  height: 42%;
+  background: rgba(0, 0, 0, 0);
+  object-fit: cover;
+}
+
+.slider-buttons {
+  display: flex;
+}
+
+.swiper-pagination {
+  position: static;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.swiper-pagination-fraction {
+  padding: 7px 0 0 0;
+  width: 73px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin: 0;
+	width: 30px;
+	height: 30px;
+  border-radius: 50%;
+}
+
+.swiper-button-prev {
+	background: url('../img/arrow-left-black.svg') #ECECEC center center no-repeat;
+}
+.swiper-button-next {
+	background: url('../img/arrow-right-black.svg') #ECECEC center center no-repeat;
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  outline: none;
+  border: 2px solid #7943A4;
+}
+
+.swiper-button-prev:hover {
+	background: url('../img/arrow-left-white.svg') #9D5CD0 center center no-repeat;
+}
+
+.swiper-button-next:hover {
+	background: url('../img/arrow-right-white.svg') #9D5CD0 center center no-repeat;
+}
+
+.swiper-button-prev:active {
+  border: 2px solid #D1A9F0;
+	background: url('../img/arrow-left-white.svg') #7943A4 center center no-repeat;
+}
+
+.swiper-button-next:active {
+  border: 2px solid #D1A9F0;
+	background: url('../img/arrow-right-white.svg') #7943A4 center center no-repeat;
+}
+
+
+/* publications */
+
+.slider-top-publications {
+  padding: 23px 0 30px 0;
+}
+
+.swiper-slide-publications {
+  display: block;
+  width: 350px;
+  height: 100%;
+  color: #ffffff;
+}
+
+/* projects */
+
+.projects__slider {
+  display: flex;
+}
+
+.swiper-container-projects {
+  height: 100%;
+}
+
+.swiper-slide-projects {
+  display: flex;
+  justify-content: center;
+  min-height: 150px;
+  border: 1px solid #CACACA;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: filter .3s linear;
+}
+
+.swiper-slide-projects:hover {
+  filter: grayscale(0);
+}

@@ -1,0 +1,62 @@
+.checkbox-label {
+  position: relative;
+  padding: 0 0 0 0;
+  color: #ffffff;
+  cursor: pointer;
+  transition-property: color, outline;
+	transition-duration: 200ms;
+	transition-timing-function: linear;
+}
+
+.checkbox-label:focus {
+  outline: 2px solid #7943A4;
+}
+
+.checkbox-label:hover {
+  color: #C283F3;
+  outline: none;
+}
+
+.checkbox-label:active {
+  color: #7943A4;
+  outline: none;
+}
+
+.checkbox-label--color {
+  color: #C283F3;
+}
+
+.check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check-box {
+  position: absolute;
+  top: 5px;
+  left: -23px ;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ffffff;
+  transition-property: color, border;
+	transition-duration:200ms;
+	transition-timing-function: linear;
+}
+
+.check-input:hover + .check-box {
+  border: 1px solid #C283F3;
+  background: url('../img/publications/check.svg') 50% 50% no-repeat;
+}
+
+.check-input:active + .check-box {
+  border: 1px solid #7943A4;
+  background-image: none;
+}
+
+.check-input:checked + .check-box{
+  border: 1px solid #C283F3;
+  background: url('../img/publications/check.svg') 50% 50% no-repeat;
+}
