@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>Blanchard - художественная галерея</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
@@ -14,25 +14,32 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/checkbox.css">
+  <link rel="stylesheet" href="css/burger.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container header-nav__container">
 			<nav class="header-nav content-size">
+        <div class="burger">
+          <span></span>
+        </div>
 				<a class="logo header__logo" href="#">
 					<img src="img/logo.svg" alt="Логотип Blanchard">
-				</a>
-				<ul class="menu header__menu">
-					<li class="menu__item"><a class="menu__link" href="#id-about-us">О нас</a></li>
-					<li class="menu__item"><a class="menu__link" href="#id-gallery">Галерея</a></li>
-					<li class="menu__item"><a class="menu__link" href="#id-catalog">Каталог</a></li>
-					<li class="menu__item"><a class="menu__link" href="#id-events">События</a></li>
-					<li class="menu__item"><a class="menu__link" href="#id-publications">Издания</a></li>
-					<li class="menu__item"><a class="menu__link" href="#id-projects">Проекты</a></li>
-					<li class="menu__item"><a class="menu__link" href="#id-contacts">Контакты</a></li>
-				</ul>
-				<a class="header__authentication" href="#">Войти</a>
+        </a>
+        <div class="header-menu">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#id-about-us">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="#id-gallery">Галерея</a></li>
+            <li class="menu__item"><a class="menu__link" href="#id-catalog">Каталог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#id-events">События</a></li>
+            <li class="menu__item"><a class="menu__link" href="#id-publications">Издания</a></li>
+            <li class="menu__item"><a class="menu__link" href="#id-projects">Проекты</a></li>
+            <li class="menu__item"><a class="menu__link" href="#id-contacts">Контакты</a></li>
+          </ul>
+          <a class="header__authentication" href="#">Войти</a>
+        </div>
+        <div class="poisk">Поиск</div>
 			</nav>
 		</div>
 		<div class="container header-art__container">
@@ -104,7 +111,7 @@
 					<input class="search__input" name="Поиск" type="search" placeholder="Поиск по сайту">
 				</form>
 			</div>
-		</div>
+    </div>
 	</header>
 	<main class="main">
 		<section class="hero">
@@ -126,7 +133,7 @@
           <p class="about__content">
             Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
           </p>
-				</div>
+        </div>
 			</div>
 		</section>
 		<section class="gallery">
@@ -748,7 +755,10 @@
           <h2 class="title events__title">События</h2>
           <ul class="events__list">
             <li class="events__item">
-              <img class="events__img" src="img/events/events-img-card-1.jpg" alt="Изображение">
+              <picture>
+                <source srcset="img/events/events-img-card-1-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="img/events/events-img-card-1.jpg" alt="Изображение">
+              </picture>
               <p class="events__place-date">
                 Музей им. Щусева<br>
                 с 20 марта по 30 апреля
@@ -759,10 +769,16 @@
               <p class="events__descr">
                 Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
               </p>
+              <p class="events__descr-1024">
+                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава...
+              </p>
               <a class="events__link" href="#" tabindex="1">Подробнее</a>
             </li>
             <li class="events__item">
-              <img class="events__img" src="img/events/events-img-card-2.jpg" alt="Изображение">
+              <picture>
+                <source srcset="img/events/events-img-card-2-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="img/events/events-img-card-2.jpg" alt="Изображение">
+              </picture>
               <p class="events__place-date">
                 ММОМА<br>
                 24 марта 19:00
@@ -773,10 +789,16 @@
               <p class="events__descr">
                 Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и&nbsp;сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...
               </p>
+              <p class="events__descr-1024">
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный...
+              </p>
               <a class="events__link" href="#" tabindex="1">Подробнее</a>
             </li>
             <li class="events__item">
-              <img class="events__img" src="img/events/events-img-card-3.jpg" alt="Изображение">
+              <picture>
+                <source srcset="img/events/events-img-card-3-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="img/events/events-img-card-3.jpg" alt="Изображение">
+              </picture>
               <p class="events__place-date">
                 Еврейский музей<br>
                 с 31 марта по 21 апреля
@@ -784,13 +806,19 @@
               <p class="events__card-title">
                 Выставка &laquo;Формация 2020&raquo;
               </p>
-              <p class="events__descr events__descr--padding-bottom">
+              <p class="events__descr">
                 Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и&nbsp;кадровой базы.
+              </p>
+              <p class="events__descr-1024">
+                Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений. Также как перспективное...
               </p>
               <a class="events__link" href="#" tabindex="1">Подробнее</a>
             </li>
             <li class="events__item events__item-hide">
-              <img class="events__img" src="img/events/events-img-card-4.jpg" alt="Изображение">
+              <picture>
+                <source srcset="img/events/events-img-card-4-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="img/events/events-img-card-4.jpg" alt="Изображение">
+              </picture>
               <p class="events__place-date">
                 Третьяковка на Крымском валу<br>
                 с 30 марта по 30 апреля
@@ -801,11 +829,17 @@
               <p class="events__descr">
                 Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования представляют собой не&nbsp;что иное, как квинтэссенцию победы маркетинга над разумом и&nbsp;должны быть рассмотрены исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых...
               </p>
+              <p class="events__descr-1024">
+                Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования представляют собой...
+              </p>
               <a class="events__link" href="#" tabindex="1">Подробнее</a>
             </li>
             <li class="events__item events__item-hide">
-              <img class="events__img" src="img/events/events-img-card-5.jpg" alt="Изображение">
-              <p class="events__place-date">
+              <picture>
+                <source srcset="img/events/events-img-card-5-1024.jpg" media="(max-width: 1024px)">
+                <img class="events__img" src="img/events/events-img-card-5.jpg" alt="Изображение">
+              </picture>
+               <p class="events__place-date">
                 ММАМ<br>
                 с 8 апреля по 20 мая
               </p>
@@ -814,6 +848,9 @@
               </p>
               <p class="events__descr">
                 Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+              </p>
+              <p class="events__descr-1024">
+                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын...
               </p>
               <a class="events__link" href="#" tabindex="1">Подробнее</a>
             </li>
@@ -1080,8 +1117,10 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__container" id="id-contacts">
-          <h2 class="title contacts__title">Контакты</h2>
+      <div class="container title__container" id="id-contacts">
+        <h2 class="title content-size contacts__title">Контакты</h2>
+      </div>
+      <div class="contacts__container">
           <div class="contacts__content">
             <div class="contacts__info">
               <div class="contacts__info-inner">
@@ -1097,7 +1136,7 @@
                     <input class="contacts__input" type="text" name="name" placeholder="Имя*" data-validate-field="name">
                   </div>
                   <div class="input-field">
-                    <input class="contacts__input" type="tel" name="tel" placeholder="Телефон*" data-validate-field="phone">
+                    <input class="contacts__input" type="number" name="tel" placeholder="Телефон*" data-validate-field="phone">
                   </div>
                   <button class="contacts__btn" type="submit">Заказать</button>
                 </form>
@@ -1117,6 +1156,7 @@
               </div>
             </div>
             <div class="contacts__map" id="map"></div>
+            <div class="contacts__map-1024" id="map-1024"></div>
           </div>
       </div>
     </section>
@@ -1149,8 +1189,8 @@
   <script src="js/slider.js"></script>
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/select.js"></script>
-  <!-- <script src="js/simplebar.min.js"></script>
-  <script src="js/scroll.js"></script> -->
+  <script src="js/simplebar.min.js"></script>
+  <script src="js/scroll.js"></script>
 	<script src="js/transition.js"></script>
   <script src="js/activ-flag-catalog.js"></script>
   <script src="js/tabs-catalog.js"></script>
@@ -1160,6 +1200,7 @@
   <script src="js/validation.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
   <script src="js/ymaps.js"></script>
+  <script src="js/burger.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,2 @@
-new SimpleBar(document.getElementById('id-spoiler'));
-
-// new SimpleBar(document.getElementById('.ui-front'));
-
-// new SimpleBar($('.ui-front')[0]);
+$('.ui-selectmenu-open').each(element, new SimpleBar());
+new SimpleBar($('#art-realizm-3-menu')[0]);
