@@ -8,7 +8,7 @@
 	transition-timing-function: linear;
 }
 
-.checkbox-label:focus {
+.checkbox-label:focus-within {
   outline: 2px solid #7943A4;
 }
 
@@ -60,3 +60,6 @@
   border: 1px solid #C283F3;
   background: url('../img/publications/check.svg') 50% 50% no-repeat;
 }
+
+
+

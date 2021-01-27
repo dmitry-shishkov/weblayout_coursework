@@ -1,23 +1,20 @@
+[data-simplebar] {
+  position: absolute;
+}
 
 .simplebar-content-wrapper {
   overflow: auto;
 }
 
 .simplebar-track.simplebar-vertical {
-  top: 7px;
-  width: 12px;
-}
-
-.simplebar-scrollbar::before {
-  background: #CCB26E;
+  top: 0;
+  bottom: 18px;
+  margin: 0 18px 0 0;
+  width: 2px;
+  background: #000;
 }
 
 .simplebar-scrollbar {
-  width: 6px;
-  background: #CCB26E;
-  border-radius: 5px;
-}
-
-.simplebar-track {
-  bottom: 7px;
+  width: 2px;
+  background: #9D5CD0;
 }

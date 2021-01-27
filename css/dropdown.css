@@ -1,0 +1,138 @@
+.header-art__list {
+  display: flex;
+}
+
+.header-art__item {
+  position: relative;
+}
+
+.header-art__item:not(:last-child) {
+  margin-right: 86px;
+}
+
+.art__btn {
+  padding: 2px 22px 2px 2px;
+  color: #fff;
+  font-size: 18px;
+  background: url('../img/header/arrow-down-white.svg') 98% 67% no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-active {
+  color: #7943A4;
+  background: url('../img/header/arrow-up-violet-active.svg') 98% 67% no-repeat;
+}
+
+.art__btn:focus-visible {
+  outline: 2px solid #7943A4;
+}
+
+.art__btn:hover {
+  color: #9D5CD0;
+  background: url('../img/header/arrow-down-violet.svg') 98% 67% no-repeat;
+}
+
+.art__btn:active {
+  color: #7943A4;
+  background: url('../img/header/arrow-up-violet-active.svg') 98% 67% no-repeat;
+}
+
+.art__list {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  display: none;
+  padding: 2px 40px;
+  width: 300px;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+}
+
+.art__item {
+  margin: 0 0 20px 0;
+}
+
+.art__link:focus {
+  outline: 2px solid #9D5CD0;
+}
+
+.art__link:hover {
+  outline: 2px solid #9D5CD0;
+}
+
+.art__link:active {
+  background: rgba(194, 131, 243, 0.4);
+  outline: 2px solid #D1A9F0;
+}
+
+.art__link {
+  display: block;
+  padding: 11px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.art__link--bg-tintoretto {
+  background: url('../img/header/art-realizm-bg-tintoretto.jpg') no-repeat;
+}
+.art__link--bg-fridrih {
+  background: url('../img/header/art-realizm-bg-fridrih.jpg') no-repeat;
+}
+.art__link--bg-leonardo {
+  background: url('../img/header/art-realizm-bg-leonardo.jpg') no-repeat;
+}
+.art__link--bg-verokko {
+  background: url('../img/header/art-realizm-bg-verokko.jpg') no-repeat;
+}
+.art__link--bg-mone {
+  background: url('../img/header/art-impressionism-bg-mone.jpg') no-repeat;
+}
+.art__link--bg-sislei {
+  background: url('../img/header/art-impressionism-bg-sislei.jpg') no-repeat;
+}
+.art__link--bg-mane {
+  background: url('../img/header/art-impressionism-bg-mane.jpg') no-repeat;
+}
+.art__link--bg-renuar {
+  background: url('../img/header/art-impressionism-bg-renuar.jpg') no-repeat;
+}
+.art__link--bg-vangog {
+  background: url('../img/header/art-postimpressionism-bg-vangog.jpg') no-repeat;
+}
+.art__link--bg-sezann {
+  background: url('../img/header/art-postimpressionism-bg-sezann.jpg') no-repeat;
+}
+.art__link--bg-gogen {
+  background: url('../img/header/art-postimpressionism-bg-gogen.jpg') no-repeat;
+}
+.art__link--bg-sera {
+  background: url('../img/header/art-postimpressionism-bg-sera.jpg') no-repeat;
+}
+.art__link--bg-candinskii {
+  background: url('../img/header/art-avangard-bg-candinskii.jpg') no-repeat;
+}
+.art__link--bg-marinetti {
+  background: url('../img/header/art-avangard-bg-marinetti.jpg') no-repeat;
+}
+.art__link--bg-malevich {
+  background: url('../img/header/art-avangard-bg-malevich.jpg') no-repeat;
+}
+.art__link--bg-picasso {
+  background: url('../img/header/art-avangard-bg-picasso.jpg') no-repeat;
+}
+.art__link--bg-carra {
+  background: url('../img/header/art-futurizm-bg-carra.jpg') no-repeat;
+}
+.art__link--bg-pratella {
+  background: url('../img/header/art-futurizm-bg-pratella.jpg') no-repeat;
+}
+.art__link--bg-severini {
+  background: url('../img/header/art-futurizm-bg-severini.jpg') no-repeat;
+}
+.art__link--bg-balla {
+  background: url('../img/header/art-futurizm-bg-balla.jpg') no-repeat;
+}
