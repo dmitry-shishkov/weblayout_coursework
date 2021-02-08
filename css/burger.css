@@ -4,6 +4,7 @@
   width: 36px;
   height: 28px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .burger span,
@@ -18,7 +19,7 @@
 }
 
 .burger span {
-  top: 12px;
+  top: 46%;
   width: 75%;
 }
 
@@ -48,4 +49,35 @@
 }
 .burger.active span{
   background: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 320px) {
+.burger {
+  width: 20px;
+  height: 15px;
+}
+
+.burger span,
+.burger::before,
+.burger::after {
+  height: 2px;
+}
+
+.burger span {
+  top: 46%;
+  width: 75%;
+}
+
+.burger.active:before{
+  content: "";
+  top: 39%;
+  width: 100%;
+  transform: rotate(45deg);
+}
+.burger.active:after{
+  content: "";
+  bottom: 50%;
+  width: 100%;
+  transform: rotate(-45deg);
+}
 }

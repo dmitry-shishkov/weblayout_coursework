@@ -38,4 +38,16 @@ function init(){
       iconImageSize: [20, 20],
     });
     myMap.geoObjects.add(myPlacemark);
+
+    var myMap = new ymaps.Map("map-768", {
+      center: [55.76, 37.655],
+      zoom: 14,
+      controls: []
+    });
+    var myPlacemark = new ymaps.Placemark([55.753326, 37.646830], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: '/img/marker.svg',
+      iconImageSize: [20, 20],
+    });
+    myMap.geoObjects.add(myPlacemark);
 }

@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="css/jquery.formstyler.css">
   <link rel="stylesheet" href="css/select.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="css/checkbox.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/scroll.css">
-  <link rel="stylesheet" href="css/search-1024.css">
+  <link rel="stylesheet" href="css/search-adaptive.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,8 +27,13 @@
           <span></span>
         </div>
 				<a class="logo header__logo" href="#">
-					<img src="img/logo.svg" alt="Логотип Blanchard">
+          <picture>
+            <source srcset="img/logo-320.svg" media="(max-width: 320px)">
+            <source srcset="img/logo-1024.svg" media="(max-width: 1024px)">
+            <img src="img/logo.svg" alt="Картина">
+          </picture>
         </a>
+        <div class="search-adaptive__switch"></div>
         <div class="header-menu">
           <ul class="header__menu-list">
             <li class="menu-list__item"><a class="menu-list__link" href="#id-about-us">О нас</a></li>
@@ -39,12 +44,15 @@
             <li class="menu-list__item"><a class="menu-list__link" href="#id-projects">Проекты</a></li>
             <li class="menu-list__item"><a class="menu-list__link" href="#id-contacts">Контакты</a></li>
           </ul>
-          <a class="header__authentication" href="#">Войти</a>
+          <a class="header__authentication" href="#id-contacts">Войти</a>
         </div>
-        <form class="search-1024__container">
-          <input class="search__input" name="Поиск" type="search">
-          <button class="search-1024" type="submit" aria-label="Поиск по сайту"></button>
-				</form>
+        <form class="search-adaptive__form">
+          <button class="search-adaptive__btn" type="submit" aria-label="Поиск по сайту"></button>
+          <input class="search-adaptive__input" name="Поиск" type="search">
+          <div class="search-adaptive__btn-hide">
+            <span></span>
+          </div>
+        </form>
 			</nav>
 		</div>
 		<div class="container header-art__container">
@@ -150,7 +158,7 @@
 							Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery__authorization">авторизуйтесь</a>, либо воспользуйтесь лицензией.
 						</p>
           </div>
-          <div class="gallery__slider swiper-container" id="slider-gallery">
+          <div class="swiper-container gallery__slider" id="slider-gallery">
             <div class="slider-top">
               <div class="slider-buttons">
                 <div class="swiper-button-prev"></div>
@@ -158,99 +166,222 @@
                 <div class="swiper-button-next"></div>
               </div>
             </div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide swiper-slide">
-									<img src="img/gallery/gallery-img-1.jpg" alt="Картинка">
+            <div class="swiper-wrapper swiper-wrapper-320">
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-1-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-1-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-1.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-									<img src="img/gallery/gallery-img-2.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-2-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-2-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-2.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-3.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-3-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-3-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-3.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-4.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-4-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-4-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-4.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-5.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-5-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-5-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-5.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-6.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-6-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-6-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-6.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-7.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-7-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-7-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-7.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-8.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-8-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-8-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-8.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-9.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-9-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-9-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-9.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-10.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-10-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-10-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-10.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-11.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-11-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-11-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-11.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-12.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-12-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-12-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-12.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-13.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-13-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-13-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-13.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-14.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-14-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-14-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-14.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-15.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-15-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-15-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-15.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-16.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-16-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-16-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-16.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-17.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-17-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-17-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-17.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-18.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-18-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-18-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-18.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-19.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-19-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-19-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-19.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-20.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-20-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-20-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-20.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-21.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-21-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-21-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-21.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-22.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-22-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-22-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-22.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-23.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-23-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-23-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-23.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-24.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-24-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-24-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-24.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-25.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-25-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-25-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-25.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-26.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-26-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-26-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-26.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-27.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-27-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-27-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-27.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-28.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-28-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-28-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-28.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-29.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-29-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-29-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-29.jpg" alt="Картина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/gallery/gallery-img-30.jpg" alt="Картинка">
+                <picture>
+                  <source srcset="img/gallery/gallery-img-30-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-30-768.jpg" media="(max-width: 768px)">
+                  <img src="img/gallery/gallery-img-30.jpg" alt="Картина">
+                </picture>
               </div>
             </div>
           </div>
+          <p class="gallery__text-768">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery__authorization">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+          </p>
         </div>
       </div>
     </section>
@@ -751,6 +882,7 @@
           <ul class="events__list">
             <li class="events__item">
               <picture>
+                <source srcset="img/events/events-img-card-1-768.jpg" media="(max-width: 768px)">
                 <source srcset="img/events/events-img-card-1-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="img/events/events-img-card-1.jpg" alt="Изображение">
               </picture>
@@ -771,6 +903,7 @@
             </li>
             <li class="events__item">
               <picture>
+                <source srcset="img/events/events-img-card-2-768.jpg" media="(max-width: 768px)">
                 <source srcset="img/events/events-img-card-2-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="img/events/events-img-card-2.jpg" alt="Изображение">
               </picture>
@@ -789,8 +922,9 @@
               </p>
               <a class="events__link" href="#" tabindex="1">Подробнее</a>
             </li>
-            <li class="events__item">
+            <li class="events__item events__item-hide-768">
               <picture>
+                <source srcset="img/events/events-img-card-3-768.jpg" media="(max-width: 768px)">
                 <source srcset="img/events/events-img-card-3-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="img/events/events-img-card-3.jpg" alt="Изображение">
               </picture>
@@ -811,6 +945,7 @@
             </li>
             <li class="events__item events__item-hide">
               <picture>
+                <source srcset="img/events/events-img-card-4-768.jpg" media="(max-width: 768px)">
                 <source srcset="img/events/events-img-card-4-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="img/events/events-img-card-4.jpg" alt="Изображение">
               </picture>
@@ -831,6 +966,7 @@
             </li>
             <li class="events__item events__item-hide">
               <picture>
+                <source srcset="img/events/events-img-card-5-768.jpg" media="(max-width: 768px)">
                 <source srcset="img/events/events-img-card-5-1024.jpg" media="(max-width: 1024px)">
                 <img class="events__img" src="img/events/events-img-card-5.jpg" alt="Изображение">
               </picture>
@@ -853,6 +989,96 @@
           <div class="events__btn-container">
             <button class="events__btn" tabindex="1">Все события</button>
           </div>
+          <div class="swiper-container events__slider" id="slider-events">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-events">
+                  <img class="events__img" src="img/events/events-img-card-1-1024.jpg" alt="Изображение">
+                  <p class="events__place-date">
+                    Музей им. Щусева<br>
+                    с 20 марта по 30 апреля
+                  </p>
+                  <h3 class="events__card-title">
+                    Книжная гравюра в&nbsp;живом восприятии
+                  </h3>
+                  <p class="events__descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                  </p>
+                  <p class="events__descr-1024">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава...
+                  </p>
+                  <a class="events__link" href="#" tabindex="1">Подробнее</a>
+                </div>
+                <div class="swiper-slide swiper-slide-events">
+                  <img class="events__img" src="img/events/events-img-card-2-1024.jpg" alt="Изображение">
+                  <p class="events__place-date">
+                    ММОМА<br>
+                    24 марта 19:00
+                  </p>
+                  <h3 class="events__card-title">
+                    &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
+                  </h3>
+                  <p class="events__descr">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и&nbsp;сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...
+                  </p>
+                  <p class="events__descr-1024">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный...
+                  </p>
+                  <a class="events__link" href="#" tabindex="1">Подробнее</a>
+                </div>
+                <div class="swiper-slide swiper-slide-events">
+                  <img class="events__img" src="img/events/events-img-card-3-1024.jpg" alt="Изображение">
+                  <p class="events__place-date">
+                    Еврейский музей<br>
+                    с 31 марта по 21 апреля
+                  </p>
+                  <h3 class="events__card-title">
+                    Выставка &laquo;Формация 2020&raquo;
+                  </h3>
+                  <p class="events__descr">
+                    Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и&nbsp;кадровой базы.
+                  </p>
+                  <p class="events__descr-1024">
+                    Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений. Также как перспективное...
+                  </p>
+                  <a class="events__link" href="#" tabindex="1">Подробнее</a>
+                </div>
+                <div class="swiper-slide swiper-slide-events">
+                  <img class="events__img" src="img/events/events-img-card-4-1024.jpg" alt="Изображение">
+                  <p class="events__place-date">
+                    Третьяковка на Крымском валу<br>
+                    с 30 марта по 30 апреля
+                  </p>
+                  <h3 class="events__card-title">
+                    XXIV Международная биеннале молодого искусства
+                  </h3>
+                  <p class="events__descr">
+                    Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования представляют собой не&nbsp;что иное, как квинтэссенцию победы маркетинга над разумом и&nbsp;должны быть рассмотрены исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых...
+                  </p>
+                  <p class="events__descr-1024">
+                    Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования представляют собой...
+                  </p>
+                  <a class="events__link" href="#" tabindex="1">Подробнее</a>
+                </div>
+                <div class="swiper-slide swiper-slide-events">
+                  <img class="events__img" src="img/events/events-img-card-5-1024.jpg" alt="Изображение">
+                  <p class="events__place-date">
+                    ММАМ<br>
+                    с 8 апреля по 20 мая
+                  </p>
+                  <h3 class="events__card-title">
+                    Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора серебра&raquo;
+                  </h3>
+                  <p class="events__descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                  </p>
+                  <p class="events__descr-1024">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын...
+                  </p>
+                  <a class="events__link" href="#" tabindex="1">Подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-events"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -861,105 +1087,196 @@
 				<div class="publications__inner content-size">
           <div class="publications__content">
             <h2 class="title publications__title">Издания</h2>
-            <h3 class="publications__subtitle category--margin-bottom">Категории</h3>
-            <ul class="checkbox__list">
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Бестселлеры
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Искусство
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Архитектура
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" checked>
-                  <span class="check-box"></span>
-                  Дизайн
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Мода
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Детям
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Художественная литература
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Публицистика
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Путеводители
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Философия
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Учебная литература
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox-label">
-                  <input class="check-input" type="checkbox" tabindex="1">
-                  <span class="check-box"></span>
-                  Журналы и газеты
-                </label>
-              </li>
-            </ul>
+            <div class="publications__dropdown-container-320">
+              <button class="publications__dropdown-btn-320">Категории</button>
+              <ul class="publications__checkbox-list">
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Бестселлеры
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Искусство
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Архитектура
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Дизайн
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Мода
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Детям
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Художественная литература
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Публицистика
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Путеводители
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Философия
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Учебная литература
+                  </label>
+                </li>
+                <li class="publications__checkbox-item">
+                  <label class="publications__checkbox-label">
+                    <input class="publications__check-input" type="checkbox" tabindex="1">
+                    <span class="publications__check-box"></span>
+                    Журналы и газеты
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <h3 class="publications__subtitle publications__subtitle--hide-320 category--margin-bottom">Категории</h3>
+            <div class="publicatons__checkbox">
+              <ul class="checkbox__list">
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Бестселлеры
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Искусство
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Архитектура
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" checked>
+                    <span class="check-box"></span>
+                    Дизайн
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Мода
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Детям
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Художественная литература
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Публицистика
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Путеводители
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Философия
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Учебная литература
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox-label">
+                    <input class="check-input" type="checkbox" tabindex="1">
+                    <span class="check-box"></span>
+                    Журналы и газеты
+                  </label>
+                </li>
+              </ul>
+            </div>
             <div class="publication__price">
               <p class="publications__subtitle price--mardgin-bottom">Цена</p>
               <form class="price__form" action="https://jsonplaceholder.typicode.com/posts" method="get">
                 <p class="price__text">От</p>
-                <input class="price__input" type="text" tabindex="1">
+                <input class="price__input" type="text" placeholder="50" tabindex="1">
                 <p class="price__text">до</p>
-                <input class="price__input" type="text" tabindex="1">
+                <input class="price__input" type="text" placeholder="25 000" tabindex="1">
                 <p class="price__text">руб.</p>
               </form>
             </div>
           </div>
-          <div class="publications__slider swiper-container" id="slider-publications">
+          <div class="swiper-container publications__slider" id="slider-publications">
             <div class="slider-top slider-top-publications">
               <div class="slider-buttons">
                 <div class="swiper-button-prev"></div>
@@ -969,7 +1286,10 @@
             </div>
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper-slide-publications">
-                <img class="books__img" src="img/publications/book-img-1.jpg" alt="Обложка">
+                <picture>
+                  <source srcset="img/publications/book-img-1-768.jpg" media="(max-width: 768px)">
+                  <img class="books__img" src="img/publications/book-img-1.jpg" alt="Обложка">
+                </picture>
                 <div class="books__title-price">
                   <p class="books__title">Искусство цвета</p>
                   <p class="books__price">620 руб</p>
@@ -978,7 +1298,10 @@
                 <a href="/" class="order-btn">Заказать</a>
               </div>
               <div class="swiper-slide swiper-slide-publications">
-                <img class="books__img" src="img/publications/book-img-2.jpg" alt="Обложка">
+                <picture>
+                  <source srcset="img/publications/book-img-2-768.jpg" media="(max-width: 768px)">
+                  <img class="books__img" src="img/publications/book-img-2.jpg" alt="Обложка">
+                </picture>
                 <div class="books__title-price">
                   <p class="books__title">Типографика</p>
                   <p class="books__price">2 450 руб</p>
@@ -987,7 +1310,10 @@
                 <a href="/" class="order-btn">Заказать</a>
               </div>
               <div class="swiper-slide swiper-slide-publications">
-                <img class="books__img" src="img/publications/book-img-3.jpg" alt="Обложка">
+                <picture>
+                  <source srcset="img/publications/book-img-3-768.jpg" media="(max-width: 768px)">
+                  <img class="books__img" src="img/publications/book-img-3.jpg" alt="Обложка">
+                </picture>
                 <div class="books__title-price">
                   <p class="books__title">Книга про буквы</p>
                   <p class="books__price">2 200   руб</p>
@@ -996,16 +1322,22 @@
                 <a href="/" class="order-btn">Заказать</a>
               </div>
               <div class="swiper-slide swiper-slide-publications">
-                <img class="books__img" src="img/publications/book-img-4.jpg" alt="Обложка">
+                <picture>
+                  <source srcset="img/publications/book-img-4-768.jpg" media="(max-width: 768px)">
+                  <img class="books__img" src="img/publications/book-img-4.jpg" alt="Обложка">
+                </picture>
                 <div class="books__title-price">
-                  <p class="books__title">Кричевский, Владимир</p>
+                  <p class="books__title">Николай Ильин</p>
                   <p class="books__price">1 100 руб</p>
                 </div>
-                <p class="books__author">Николай Ильин</p>
+                <p class="books__author">Кричевский, Владимир</p>
                 <a href="/" class="order-btn">Заказать</a>
               </div>
               <div class="swiper-slide swiper-slide-publications">
-                <img class="books__img" src="img/publications/book-img-5.jpg" alt="Обложка">
+                <picture>
+                  <source srcset="img/publications/book-img-5-768.jpg" media="(max-width: 768px)">
+                  <img class="books__img" src="img/publications/book-img-5.jpg" alt="Обложка">
+                </picture>
                 <div class="books__title-price">
                   <p class="books__title">Модульные сетки в граф...</p>
                   <p class="books__price">1 450 руб</p>
@@ -1014,7 +1346,10 @@
                 <a href="/" class="order-btn">Заказать</a>
               </div>
               <div class="swiper-slide swiper-slide-publications">
-                <img class="books__img" src="img/publications/book-img-6.jpg" alt="Обложка">
+                <picture>
+                  <source srcset="img/publications/book-img-6-768.jpg" media="(max-width: 768px)">
+                  <img class="books__img" src="img/publications/book-img-6.jpg" alt="Обложка">
+                </picture>
                 <div class="books__title-price">
                   <p class="books__title">Эволюция графических ст...</p>
                   <p class="books__price">3 200 руб</p>
@@ -1023,7 +1358,10 @@
                 <a href="/" class="order-btn">Заказать</a>
               </div>
               <div class="swiper-slide swiper-slide-publications">
-                <img class="books__img" src="img/publications/book-img-7.jpg" alt="Обложка">
+                <picture>
+                  <source srcset="img/publications/book-img-7-768.jpg" media="(max-width: 768px)">
+                  <img class="books__img" src="img/publications/book-img-7.jpg" alt="Обложка">
+                </picture>
                 <div class="books__title-price">
                   <p class="books__title">Искусство и визуальное в...</p>
                   <p class="books__price">2 200 руб</p>
@@ -1033,6 +1371,57 @@
               </div>
             </div>
           </div>
+          <ul class="books__list">
+            <li class="books__item">
+              <img class="books__img" src="img/publications/book-img-1-320.jpg" alt="Обложка">
+              <p class="books__title">Искусство цвета</p>
+              <p class="books__author">Иттен, Иоханнес</p>
+              <p class="books__price">620 руб</p>
+              <a href="/" class="order-btn">Заказать</a>
+            </li>
+            <li class="books__item">
+              <img class="books__img" src="img/publications/book-img-2-320.jpg" alt="Обложка">
+              <p class="books__title">Типографика</p>
+              <p class="books__author">Рудер, Эмиль</p>
+              <p class="books__price">2 450 руб</p>
+              <a href="/" class="order-btn">Заказать</a>
+            </li>
+            <li class="books__item">
+              <img class="books__img" src="img/publications/book-img-3-320.jpg" alt="Обложка">
+              <p class="books__title">Книга про буквы</p>
+              <p class="books__author">Гордон, Юрий</p>
+              <p class="books__price">2 200   руб</p>
+              <a href="/" class="order-btn">Заказать</a>
+            </li>
+            <li class="books__item">
+              <img class="books__img" src="img/publications/book-img-4-320.jpg" alt="Обложка">
+              <p class="books__title">Николай Ильин</p>
+              <p class="books__author">Кричевский, Владимир</p>
+              <p class="books__price">1 100 руб</p>
+              <a href="/" class="order-btn">Заказать</a>
+            </li>
+            <li class="books__item">
+              <img class="books__img" src="img/publications/book-img-5-320.jpg" alt="Обложка">
+              <p class="books__title">Модульные сетки в граф...</p>
+              <p class="books__author">Мюллер-Брокманн, Йозеф</p>
+              <p class="books__price">1 450 руб</p>
+              <a href="/" class="order-btn">Заказать</a>
+            </li>
+            <li class="books__item">
+              <img class="books__img" src="img/publications/book-img-6-320.jpg" alt="Обложка">
+              <p class="books__title">Эволюция графических ст...</p>
+              <p class="books__author">Хеллер, Чваст</p>
+              <p class="books__price">3 200 руб</p>
+              <a href="/" class="order-btn">Заказать</a>
+            </li>
+            <li class="books__item">
+              <img class="books__img" src="img/publications/book-img-7-320.jpg" alt="Обложка">
+              <p class="books__title">Искусство и визуальное в...</p>
+              <p class="books__author">Арнхейм, Рудольф</p>
+              <p class="books__price">2 200 руб</p>
+              <a href="/" class="order-btn">Заказать</a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -1076,31 +1465,31 @@
             <div class="swiper-container swiper-container-projects" id="slider-projects">
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide-projects">
-                    <img src="img/projects/projects_img_1.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_1.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                  <img src="img/projects/projects_img_2.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_2.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                <img src="img/projects/projects_img_3.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_3.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                <img src="img/projects/projects_img_4.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_4.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                <img src="img/projects/projects_img_5.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_5.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                <img src="img/projects/projects_img_6.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_6.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                <img src="img/projects/projects_img_7.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_7.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                <img src="img/projects/projects_img_8.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_8.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                <img src="img/projects/projects_img_9.png" alt="Партнеры">
+                  <img class="projects__img" src="img/projects/projects_img_9.png" alt="Партнеры">
                 </div>
               </div>
             </div>
@@ -1114,49 +1503,54 @@
     <section class="contacts">
       <div class="container title__container" id="id-contacts">
         <h2 class="title content-size contacts__title">Контакты</h2>
+        <h3 class="contacts__showroom-320">Шоурум №2</h3>
+        <p class="contacts__address-320">
+          Покровский бульвар, дом 24, строение 3
+        </p>
       </div>
       <div class="contacts__container">
-          <div class="contacts__content">
-            <div class="contacts__info">
-              <div class="contacts__info-inner">
-                <h3 class="contacts__showroom">Шоурум №4</h3>
-                <h3 class="contacts__showroom-1024">Шоурум №2</h3>
-                <p class="contacts__address">
-                  Леонтьевский переулок, дом 5, строение 1
-                </p>
-                <p class="contacts__address-1024">
-                  Покровский бульвар, дом 24, строение 3
-                </p>
-                <p class="contacts__subtitle">
-                  Заказать обратный звонок
-                </p>
-                <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                  <div class="input-field">
-                    <input class="contacts__input" type="text" name="name" placeholder="Имя*" data-validate-field="name">
-                  </div>
-                  <div class="input-field">
-                    <input class="contacts__input" type="number" name="tel" placeholder="Телефон*" data-validate-field="phone">
-                  </div>
-                  <button class="contacts__btn" type="submit">Заказать</button>
-                </form>
-                <p class="contacts__subtitle">
-                  Связаться в один клик
-                </p>
-                <div class="contacts__social">
-                  <ul class="social__list">
-                    <li class="social__item social__link--whatsapp">
-                      <a class="social__link" href="https://www.whatsapp.com/"></a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link social__link--telegram" href="https://telegram.org/"></a>
-                    </li>
-                  </ul>
+        <div class="contacts__content">
+          <div class="contacts__info">
+            <div class="contacts__info-inner">
+              <h3 class="contacts__showroom">Шоурум №4</h3>
+              <h3 class="contacts__showroom-1024">Шоурум №2</h3>
+              <p class="contacts__address">
+                Леонтьевский переулок, дом 5, строение 1
+              </p>
+              <p class="contacts__address-1024">
+                Покровский бульвар, дом 24, строение 3
+              </p>
+              <p class="contacts__subtitle contacts__subtitle--order-margin-bottom">
+                Заказать обратный звонок
+              </p>
+              <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <div class="input-field">
+                  <input class="contacts__input" type="text" name="name" placeholder="Имя*" data-validate-field="name">
                 </div>
+                <div class="input-field">
+                  <input class="contacts__input" type="number" name="tel" placeholder="Телефон*" data-validate-field="phone">
+                </div>
+                <button class="contacts__btn" type="submit">Заказать</button>
+              </form>
+              <p class="contacts__subtitle contacts__subtitle--social-margin-bottom">
+                Связаться в один клик
+              </p>
+              <div class="contacts__social">
+                <ul class="social__list">
+                  <li class="social__item social__link--whatsapp">
+                    <a class="social__link" href="https://www.whatsapp.com/"></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--telegram" href="https://telegram.org/"></a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="contacts__map" id="map"></div>
-            <div class="contacts__map-1024" id="map-1024"></div>
           </div>
+          <div class="contacts__map" id="map"></div>
+          <div class="contacts__map-1024" id="map-1024"></div>
+          <div class="contacts__map-768" id="map-768"></div>
+        </div>
       </div>
     </section>
   </main>
@@ -1164,7 +1558,10 @@
     <div class="container footer__container">
       <div class="footer__inner content-size">
         <a class="logo footer__logo" href="#">
-					<img src="img/logo.svg" alt="Логотип Blanchard">
+          <picture>
+            <source srcset="img/logo-320-footer.svg" media="(max-width: 320px)">
+            <img src="img/logo.svg" alt="Логотип Blanchard">
+          </picture>
         </a>
         <ul class="footer__social">
           <li class="footer__item">
@@ -1201,6 +1598,7 @@
   <script src="js/burger.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/dropdown.js"></script>
+  <script src="js/search.js"></script>
   <script src="js/simplebar.min.js"></script>
 
 </body>

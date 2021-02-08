@@ -60,4 +60,14 @@ $(document).ready(function(){
     e.stopPropagation();
   });
 
+  $(".publications__dropdown-container-320").click(function() {
+    $('.publications__checkbox-list').toggle();
+  });
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest(".publications__dropdown-container-320").length) {
+      $('.publications__checkbox-list').hide();
+    }
+    e.stopPropagation();
+  });
+
 });

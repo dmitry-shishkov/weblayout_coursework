@@ -1,3 +1,6 @@
+
+/* header */
+
 .header-art__list {
   display: flex;
 }
@@ -135,4 +138,63 @@
 }
 .art__link--bg-balla {
   background: url('../img/header/art-futurizm-bg-balla.jpg') no-repeat;
+}
+
+/* publications */
+
+.publications__dropdown-container-320 {
+  margin: 0 0 64px 0;
+  position: relative;
+}
+
+.publications__dropdown-btn-320 {
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  background: url('../img/header/arrow-down-white.svg') 100% 57% no-repeat;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  cursor: pointer;
+}
+
+/* .publications__dropdown-btn-320-active {
+  color: #7943A4;
+  background: url('../img/header/arrow-up-violet-active.svg') 100% 57% no-repeat;
+} */
+
+.publications__dropdown-btn-320:active {
+  color: #7943A4;
+  background: url('../img/header/arrow-up-violet-active.svg') 100% 57% no-repeat;
+}
+
+.publications__checkbox-list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+  padding: 0 20px 10px 23px;
+  width: 290px;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  z-index: 10;
+}
+
+.publications__checkbox-item {
+  position: relative;
+  padding: 12px 0;
+}
+
+.publications__checkbox-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -23px;
+  width: 290px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }

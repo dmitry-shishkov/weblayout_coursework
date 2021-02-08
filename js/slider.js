@@ -13,14 +13,16 @@ var swiper = new Swiper('#slider-gallery', {
     1366: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 50,
       slidesPerGroup: 3,
     },
-    320: {
+    768: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 35,
       slidesPerGroup: 2,
+    },
+    320: {
+      speed: 300,
+      slidesPerView: 1,
     },
   },
 });
@@ -28,7 +30,6 @@ var swiper = new Swiper('#slider-gallery', {
 var swiper = new Swiper('#slider-publications', {
   speed: 800,
   slidesPerView: 3,
-  spaceBetween: 50,
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -41,16 +42,16 @@ var swiper = new Swiper('#slider-publications', {
   breakpoints: {
     1200: {
       slidesPerView: 3,
+      spaceBetween: 50,
     },
     320: {
       slidesPerView: 2,
+      spaceBetween: 35,
     },
   },
 });
 
 var swiper = new Swiper('#slider-projects', {
-  speed: 1000,
-  spaceBetween: 50,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -58,12 +59,33 @@ var swiper = new Swiper('#slider-projects', {
   },
   breakpoints: {
     1366: {
+      speed: 1000,
       slidesPerView: 3,
       slidesPerGroup: 3,
+      spaceBetween: 50,
     },
-    320: {
+    1024: {
+      speed: 1000,
       slidesPerView: 2,
       slidesPerGroup: 2,
+      spaceBetween: 50,
     },
+    768: {
+      speed: 1000,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 35,
+    },
+    320: {
+      speed: 500,
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  },
+});
+
+var swiper = new Swiper('#slider-events', {
+  pagination: {
+    el: '.swiper-pagination',
   },
 });
