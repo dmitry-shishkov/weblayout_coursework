@@ -1,5 +1,8 @@
 var swiper = new Swiper('#slider-gallery', {
   speed: 1000,
+  lazy: {
+    loadPrevNext: true,
+  },
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -15,7 +18,7 @@ var swiper = new Swiper('#slider-gallery', {
       slidesPerColumn: 2,
       slidesPerGroup: 3,
     },
-    768: {
+    577: {
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup: 2,
@@ -40,11 +43,11 @@ var swiper = new Swiper('#slider-publications', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    1200: {
+    1165: {
       slidesPerView: 3,
       spaceBetween: 50,
     },
-    320: {
+    576: {
       slidesPerView: 2,
       spaceBetween: 35,
     },
@@ -70,21 +73,21 @@ var swiper = new Swiper('#slider-projects', {
       slidesPerGroup: 2,
       spaceBetween: 50,
     },
-    768: {
+    420: {
       speed: 1000,
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 35,
     },
     320: {
-      speed: 500,
-      slidesPerView: 1,
+      speed: 1000,
       spaceBetween: 10,
     },
   },
 });
 
 var swiper = new Swiper('#slider-events', {
+  spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination',
   },

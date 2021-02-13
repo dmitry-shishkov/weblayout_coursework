@@ -7,32 +7,36 @@
   z-index: 10;
 }
 
-.burger span,
 .burger::before,
 .burger::after {
-  display: block;
+  content: "";
   position: absolute;
+  top: 0;
   left: 0;
   height: 4px;
-  background: #ffffff;
+  background-color: #fff;
   transition: .3s;
 }
 
-.burger span {
-  top: 46%;
-  width: 75%;
-}
-
 .burger::before{
-  content: "";
-  top: 0;
   width: 100%;
 }
 
 .burger::after{
-  content: "";
+  top: auto;
   bottom: 0;
   width: 65%;
+}
+
+.burger span {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 0;
+  width: 75%;
+  height: 4px;
+  transform: translateY(-50%);
+  background-color: #fff;
 }
 
 .burger.active:before{
@@ -51,7 +55,7 @@
   background: rgba(255, 255, 255, 0);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
 .burger {
   width: 20px;
   height: 15px;
@@ -64,7 +68,6 @@
 }
 
 .burger span {
-  top: 46%;
   width: 75%;
 }
 

@@ -85,7 +85,7 @@
 }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
 
 .search-adaptive__form {
   position: absolute;

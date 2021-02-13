@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/accordion.css">
-  <link rel="stylesheet" href="css/jquery.formstyler.css">
   <link rel="stylesheet" href="css/select.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/slider.css">
@@ -28,7 +27,7 @@
         </div>
 				<a class="logo header__logo" href="#">
           <picture>
-            <source srcset="img/logo-320.svg" media="(max-width: 320px)">
+            <source srcset="img/logo-320.svg" media="(max-width: 576px)">
             <source srcset="img/logo-1024.svg" media="(max-width: 1024px)">
             <img src="img/logo.svg" alt="Картина">
           </picture>
@@ -148,8 +147,9 @@
 							<p class="gallery__label">
 								Фильтровать по:
 							</p>
-							<select name="Фильтр" id="gallery-select">
-								<option value="Автор" selected>Автор</option>
+							<select class="select" name="Фильтр">
+                <option disabled>Автор</option>
+								<option value="Автор">Автор</option>
 								<option value="Направление">Направление</option>
 								<option value="Техника">Техника</option>
 							</select>
@@ -169,213 +169,243 @@
             <div class="swiper-wrapper swiper-wrapper-320">
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-1-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-1-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-1-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-1.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-1.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-2-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-2-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-2-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-2.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-2.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-3-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-3-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-3-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-3.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-3.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-4-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-4-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-4-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-4.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-4.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-5-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-5-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-5-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-5.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-5.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-6-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-6-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-6-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-6.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-6.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-7-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-7-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-7-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-7.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-7.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-8-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-8-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-8-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-8.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-8.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-9-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-9-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-9-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-9.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-9.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-10-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-10-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-10-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-10.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-10.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-11-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-11-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-11-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-11.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-11.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-12-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-12-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-12-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-12.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-12.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-13-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-13-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-13-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-13.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-13.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-14-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-14-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-14-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-14.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-14.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-15-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-15-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-15-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-15.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-15.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-16-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-16-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-16-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-16.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-16.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-17-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-17-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-17-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-17.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-17.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-18-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-18-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-18-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-18.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-18.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-19-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-19-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-19-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-19.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-19.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-20-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-20-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-20-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-20.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-20.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-21-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-21-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-21-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-21.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-21.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-22-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-22-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-22-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-22.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-22.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-23-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-23-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-23-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-23.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-23.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-24-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-24-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-24-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-24.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-24.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-25-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-25-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-25-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-25.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-25.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-26-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-26-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-26-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-26.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-26.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-27-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-27-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-27-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-27.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-27.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-28-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-28-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-28-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-28.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-28.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-29-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-29-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-29-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-29.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-29.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/gallery/gallery-img-30-320.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/gallery-img-30-320.jpg" media="(max-width: 576px)">
                   <source srcset="img/gallery/gallery-img-30-768.jpg" media="(max-width: 768px)">
-                  <img src="img/gallery/gallery-img-30.jpg" alt="Картина">
+                  <img class="gallery__img swiper-lazy" data-src="img/gallery/gallery-img-30.jpg" src="#" alt="Картина">
                 </picture>
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
             </div>
           </div>
@@ -1474,7 +1504,7 @@
                   <img class="projects__img" src="img/projects/projects_img_3.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
-                  <img class="projects__img" src="img/projects/projects_img_4.png" alt="Партнеры">
+                  <img class="projects__img projects__img--width" src="img/projects/projects_img_4.png" alt="Партнеры">
                 </div>
                 <div class="swiper-slide swiper-slide-projects">
                   <img class="projects__img" src="img/projects/projects_img_5.png" alt="Партнеры">
@@ -1559,7 +1589,7 @@
       <div class="footer__inner content-size">
         <a class="logo footer__logo" href="#">
           <picture>
-            <source srcset="img/logo-320-footer.svg" media="(max-width: 320px)">
+            <source srcset="img/logo-320-footer.svg" media="(max-width: 576px)">
             <img src="img/logo.svg" alt="Логотип Blanchard">
           </picture>
         </a>
@@ -1584,7 +1614,6 @@
   <script src="js/accordion-catalog.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/slider.js"></script>
-  <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/select.js"></script>
 	<script src="js/transition.js"></script>
   <script src="js/flag-catalog-active.js"></script>
